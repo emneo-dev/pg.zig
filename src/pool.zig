@@ -61,7 +61,7 @@ pub const Pool = struct {
 
         pool.* = .{
             ._io = io,
-            ._cond = .{},
+            ._cond = .init,
             ._mutex = .init,
             ._conns = conns,
             ._arena = arena,
